@@ -1,0 +1,30 @@
+body {
+  background-color: lightpink;
+}
+
+#name {
+  margin-top: 1%;
+}
+
+h2 {
+  margin-bottom: 3%;
+}
+
+.link {
+  margin-left: 40%;
+  margin-bottom: 10%;
+}
+
+p {
+  margin-left: 30%;
+  margin-top: 8%;
+}
+
+/* #submitButton {
+  background-color: green;
+  margin-left: 35%;
+  font-size: 150%;
+  padding: 10 20 5px 10px;
+  color: antiquewhite;
+  border-radius: 10px;
+} */
