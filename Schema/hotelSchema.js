@@ -23,12 +23,9 @@ const hotelSchema = Schema({
   },
   menu: [
     {
-      name: { type: String, required: true },
-      dishimage: { type: String, required: true },
-      region: { type: String, required: true }, //chinese,southIndian...
-      variant: { type: String, required: true }, //starters,maincourse....
-      price: { type: Number, required: true },
-      isready: { type: Boolean, required: true },
+      type: mongoose.Schema.Types.ObjectId,
+      required: true,
+      ref: 'menuitem',
     },
   ],
   hotelimage: {
@@ -38,6 +35,6 @@ const hotelSchema = Schema({
   },
 });
 
-const Hotel = mongoose.Schema('hotel', hotelSchema);
+const Hotel = mongoose.model('hotel', hotelSchema);
 
 export default Hotel;
